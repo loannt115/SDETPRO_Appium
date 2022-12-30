@@ -53,7 +53,7 @@ public class NarrowDownSearchingScope {
 //                MobileElement appNameElem = notificationElem.findElement(MobileBy.id("android:id/app_name_text"));
                 List<MobileElement> titleElems = notificationElem.findElements(MobileBy.id("android:id/title"));
                 List<MobileElement> contentElems = notificationElem.findElements(MobileBy.id("android:id/text"));
-                if (!contentElems.isEmpty()) {
+                if (!titleElems.isEmpty() && !contentElems.isEmpty()) {
                     MobileElement titleElem = titleElems.get(0);
                     MobileElement contentElem = contentElems.get(0);
                     notificationContents.put(titleElem.getText().trim(), contentElem.getText().trim());
