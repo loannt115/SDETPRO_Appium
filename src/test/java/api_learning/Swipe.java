@@ -108,4 +108,7 @@ public class Swipe {
                     .perform();
         }
     }
+
+    // TODO: swipe until see an element
+    public void swipeUntilISee(String elementString){}
 }
