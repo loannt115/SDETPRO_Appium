@@ -49,5 +49,13 @@ public class LoginTest {
         public String getPassword() {
             return password;
         }
+
+        @Override
+        public String toString() {
+            return "LoginCred{" +
+                    "email='" + email + '\'' +
+                    ", password='" + password + '\'' +
+                    '}';
+        }
     }
 }
