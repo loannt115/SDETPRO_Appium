@@ -15,19 +15,19 @@ public class LoginScreenMod03 {
         this.appiumDriver = appiumDriver;
     }
 
-    public LoginScreenMod03 inputEmailElem(String emailTxt){
+    public LoginScreenMod03 inputEmail(String emailTxt){
         if (!emailTxt.isEmpty()){
         appiumDriver.findElement(emailSel).sendKeys(emailTxt);
         }
         return this;
     }
 
-    public LoginScreenMod03 inputPasswordElem(String passwordTxt){
+    public LoginScreenMod03 inputPassword(String passwordTxt){
         if (!passwordTxt.isEmpty()) appiumDriver.findElement(passwordSel).sendKeys(passwordTxt);
         return this;
     }
 
-    public void clickOnLoginBtnElem(){
+    public void clickOnLoginBtn(){
         appiumDriver.findElement(loginBtnSel).click();
     }
 }
