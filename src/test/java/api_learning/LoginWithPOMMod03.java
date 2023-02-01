@@ -17,9 +17,9 @@ public class LoginWithPOMMod03 {
 
             LoginScreenMod03 loginScreen = new LoginScreenMod03(appiumDriver);
             loginScreen
-                    .inputEmailElem("teo@sth.com")
-                    .inputPasswordElem("12345678")
-                    .clickOnLoginBtnElem();
+                    .inputEmail("teo@sth.com")
+                    .inputPassword("12345678")
+                    .clickOnLoginBtn();
         } catch (Exception e) {
             e.printStackTrace();
         }
