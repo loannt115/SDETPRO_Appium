@@ -6,6 +6,7 @@ import models.components.global.BottomNavComponent;
 import models.components.login.LoginFormComponent;
 import models.pages.LoginScreen;
 import org.apache.commons.validator.routines.EmailValidator;
+import org.testng.Assert;
 import test_flows.BaseFlow;
 
 public class LoginFlow extends BaseFlow {
@@ -61,13 +62,13 @@ public class LoginFlow extends BaseFlow {
         String actualInvalidEmailStr = loginFormComp.getInvalidEmailStr();
         String expectedInvalidEmailStr = "Please enter a valid email address";
 
-        System.out.println("actualInvalidEmailStr: " + actualInvalidEmailStr);
+        Assert.assertEquals(actualInvalidEmailStr, expectedInvalidEmailStr, "[ERR] Message is not correct");
     }
 
     private void verifyIncorrectPassword(LoginFormComponent loginFormComp) {
         String actualInvalidPasswordStr = loginFormComp.getInvalidPasswordStr();
         String expectedInvalidPasswordStr = "Please enter at least 8 characters";
 
-        System.out.println("actualInvalidPasswordStr: " + actualInvalidPasswordStr);
+        Assert.assertEquals(actualInvalidPasswordStr, expectedInvalidPasswordStr, "[ERR] Message is not correct");
     }
 }
