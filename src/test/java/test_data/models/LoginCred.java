@@ -9,6 +9,14 @@ public class LoginCred {
         this.password = password;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     @Override
     public String toString() {
         return "LoginCred{" +
