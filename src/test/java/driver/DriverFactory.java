@@ -55,14 +55,15 @@ public class DriverFactory implements MobileCapabilityTypeEx {
             desiredCapabilities.setCapability(APP_ACTIVITY, ".MainActivity t12");
             desiredCapabilities.setCapability(SYSTEM_PORT, systemPort);
             URL appiumServer = null;
+            String targetServer = "http://55.5.55.102:4444/wd/hub";
             try {
-                appiumServer = new URL("http://localhost:4723/wd/hub");
+                appiumServer = new URL(targetServer);
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
             if (appiumServer == null)
-                throw new RuntimeException("Can't construct the appium server url @http://localhost:4723/wd/hub");
+                throw new RuntimeException("Can't connect to Selenium Grid");
 
             switch (platform) {
                 case ANDROID:
