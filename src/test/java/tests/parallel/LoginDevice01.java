@@ -1,5 +1,8 @@
 package tests.parallel;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
+import io.qameta.allure.TmsLink;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test_data.DataObjectBuilder;
@@ -8,7 +11,10 @@ import test_flows.authentication.LoginFlow;
 import tests.BaseTest;
 
 public class LoginDevice01 extends BaseTest {
-    @Test(dataProvider = "loginCredData")
+    @Issue("LOAN-38")
+    @TmsLink("LOAN-1")
+    @Description("Login Test with data-driven")
+    @Test(dataProvider = "loginCredData", description = "Login Test")
     public void testLogin(LoginCred loginCred) {
         System.out.println("Session ID: " + getDriver().getSessionId());
         LoginFlow loginFlow = new LoginFlow(getDriver(), loginCred.getEmail(), loginCred.getPassword());
