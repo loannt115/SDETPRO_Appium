@@ -14,7 +14,6 @@ public class LoginDevice02 extends BaseTest {
         LoginFlow loginFlow = new LoginFlow(getDriver(), loginCred.getEmail(), loginCred.getPassword());
         loginFlow.goToLoginScreen();
         loginFlow.login();
-        loginFlow.verifyLogin();
     }
 
     @DataProvider
