@@ -1,0 +1,24 @@
+{
+  "capabilities": [
+    {
+      "maxInstances": 1,
+      "platform": "ios",
+      "deviceName": "iPhone 13",
+      "platformVersion": "15.0"
+    }
+  ],
+  "configuration": {
+    "cleanUpCycle": 2000,
+    "timeout": 30000,
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "url": "http://55.5.55.102:9001/wd/hub",
+    "host": "55.5.55.102",
+    "port": 9001,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": "55.5.55.102",
+    "hubProtocol": "http"
+  }
+}
