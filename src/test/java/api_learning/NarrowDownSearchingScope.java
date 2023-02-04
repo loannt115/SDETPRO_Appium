@@ -17,7 +17,7 @@ import java.util.Map;
 
 public class NarrowDownSearchingScope {
     public static void main(String[] args) {
-        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.ANDROID);
+        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.android);
 
         try {
             //Get mobile window size

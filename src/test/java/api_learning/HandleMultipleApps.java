@@ -12,11 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import platform.Platform;
 
 import java.time.Duration;
-import java.util.Objects;
 
 public class HandleMultipleApps implements MobileCapabilityTypeEx {
     public static void main(String[] args) {
-        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.ANDROID);
+        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.android);
 
         try {
             MobileElement navLoginScreenBtnElem = appiumDriver.findElement(MobileBy.AccessibilityId("Login"));
