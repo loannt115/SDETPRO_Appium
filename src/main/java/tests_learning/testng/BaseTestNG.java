@@ -1,0 +1,16 @@
+package tests_learning.testng;
+
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
+public class BaseTestNG {
+    @BeforeSuite
+    public void beforeSuite(){
+        System.out.println(this.getClass().getSimpleName() + "|Before Suite");
+    }
+
+    @BeforeTest
+    public void beforeTest(){
+        System.out.println(this.getClass().getSimpleName() + "|Before Test");
+    }
+}

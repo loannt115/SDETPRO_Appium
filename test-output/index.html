@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 12 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Regression" class="navigator-link">
+              <span class="suite-name border-failed">Regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Regression" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Regression" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Regression" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Regression" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Regression" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Regression" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Regression" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 12 failed,  6 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.parallel.LoginDevice02" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithDataProviderTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.parallel.LoginDevice01" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithBaseTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithDataBuilderTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithDataProviderTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithDataBuilderTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithDataBuilderTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithDataProviderTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestNGHooks01" class="method navigator-link" hash-for-method="testSth03">testSth03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestNGHooks01" class="method navigator-link" hash-for-method="testSth04">testSth04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods skipped suite-Regression"> (hide)</a> <!-- hide-methods skipped suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods skipped suite-Regression"> (show)</a> <!-- show-methods skipped suite-Regression -->
+                    </span>
+                    <div class="method-list-content skipped suite-Regression">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.parallel.LoginDevice02" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.parallel.LoginDevice02" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithBaseTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.parallel.LoginDevice01" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.authen.LoginWithBaseTest" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.parallel.LoginDevice01" class="method navigator-link" hash-for-method="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods passed suite-Regression"> (hide)</a> <!-- hide-methods passed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods passed suite-Regression"> (show)</a> <!-- show-methods passed suite-Regression -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestParameter" class="method navigator-link" hash-for-method="testParameter(emulator-5556, 9206)">testParameter(emulator-5556, 9206)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestParameter02" class="method navigator-link" hash-for-method="testParameter(emulator-5556, 9206)">testParameter(emulator-5556, 9206)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestNGHooks02" class="method navigator-link" hash-for-method="testSth01">testSth01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestNGHooks01" class="method navigator-link" hash-for-method="testSth01">testSth01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestNGHooks02" class="method navigator-link" hash-for-method="testSth02">testSth02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests_learning.testng.TestNGHooks01" class="method navigator-link" hash-for-method="testSth02">testSth02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Regression" class="panel Regression">
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests_learning.authen.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: connect
+                      Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+                      System info: host: &apos;LAPTOP-020HTH5G&apos;, ip: &apos;55.5.55.102&apos;, os.name: &apos;Windows
+                      11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+                      Driver info: driver.version: AndroidDriver
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+                      at java.base/java.util.Optional.orElseGet(Optional.java:369)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                      at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+                      at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                      at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+                      at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+                      at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+                      at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                      at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+                      at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+                      at driver.DriverFactory.getDriver(DriverFactory.java:35)
+                      at tests_learning.authen.LoginTest.testLogin(LoginTest.java:16)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      Caused by: java.net.ConnectException: Connection refused: connect
+                      at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+                      at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+                      at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+                      at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+                      at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+                      at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                      at java.base/java.net.Socket.connect(Socket.java:608)
+                      at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+                      at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+                      at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+                      at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+                      at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                      at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                      at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+                      at okhttp3.RealCall.execute(RealCall.java:77)
+                      at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+                      at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+                      ... 35 more
+                      ... Removed 21 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests_learning.authen.LoginWithDataBuilderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@', password='12345678'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: connect
+                      Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+                      System info: host: &apos;LAPTOP-020HTH5G&apos;, ip: &apos;55.5.55.102&apos;, os.name: &apos;Windows
+                      11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+                      Driver info: driver.version: AndroidDriver
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+                      at java.base/java.util.Optional.orElseGet(Optional.java:369)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                      at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+                      at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                      at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+                      at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+                      at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+                      at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                      at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+                      at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+                      at driver.DriverFactory.getDriver(DriverFactory.java:35)
+                      at tests_learning.authen.LoginWithDataBuilderTest.testLogin(LoginWithDataBuilderTest.java:16)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      Caused by: java.net.ConnectException: Connection refused: connect
+                      at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+                      at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+                      at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+                      at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+                      at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+                      at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                      at java.base/java.net.Socket.connect(Socket.java:608)
+                      at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+                      at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+                      at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+                      at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+                      at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                      at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                      at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+                      at okhttp3.RealCall.execute(RealCall.java:77)
+                      at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+                      at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+                      ... 35 more
+                      ... Removed 21 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='1234567'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: connect
+                      Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+                      System info: host: &apos;LAPTOP-020HTH5G&apos;, ip: &apos;55.5.55.102&apos;, os.name: &apos;Windows
+                      11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+                      Driver info: driver.version: AndroidDriver
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+                      at java.base/java.util.Optional.orElseGet(Optional.java:369)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                      at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+                      at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                      at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+                      at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+                      at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+                      at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                      at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+                      at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+                      at driver.DriverFactory.getDriver(DriverFactory.java:35)
+                      at tests_learning.authen.LoginWithDataBuilderTest.testLogin(LoginWithDataBuilderTest.java:16)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      Caused by: java.net.ConnectException: Connection refused: connect
+                      at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+                      at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+                      at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+                      at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+                      at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+                      at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                      at java.base/java.net.Socket.connect(Socket.java:608)
+                      at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+                      at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+                      at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+                      at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+                      at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                      at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                      at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+                      at okhttp3.RealCall.execute(RealCall.java:77)
+                      at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+                      at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+                      ... 35 more
+                      ... Removed 21 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: connect
+                      Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+                      System info: host: &apos;LAPTOP-020HTH5G&apos;, ip: &apos;55.5.55.102&apos;, os.name: &apos;Windows
+                      11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+                      Driver info: driver.version: AndroidDriver
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+                      at java.base/java.util.Optional.orElseGet(Optional.java:369)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                      at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+                      at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                      at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+                      at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+                      at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+                      at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                      at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+                      at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+                      at driver.DriverFactory.getDriver(DriverFactory.java:35)
+                      at tests_learning.authen.LoginWithDataBuilderTest.testLogin(LoginWithDataBuilderTest.java:16)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      Caused by: java.net.ConnectException: Connection refused: connect
+                      at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+                      at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+                      at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+                      at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+                      at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+                      at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                      at java.base/java.net.Socket.connect(Socket.java:608)
+                      at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+                      at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+                      at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+                      at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+                      at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                      at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                      at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+                      at okhttp3.RealCall.execute(RealCall.java:77)
+                      at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+                      at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+                      ... 35 more
+                      ... Removed 21 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests_learning.authen.LoginWithBaseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Please provide env variable [env]!
+                      at driver.DriverFactory.getDriver(DriverFactory.java:54)
+                      at tests.BaseTest.getDriver(BaseTest.java:34)
+                      at tests_learning.authen.LoginWithBaseTest.testLogin(LoginWithBaseTest.java:19)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      ... Removed 17 stack frames
+                  </div> <!-- stack-trace -->
+                  <em>
+(Login Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.parallel.LoginDevice01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Name is null
+	at java.base/java.lang.Enum.valueOf(Enum.java:238)
+	at platform.Platform.valueOf(Platform.java:3)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.parallel.LoginDevice01.testLogin(LoginDevice01.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests_learning.testng.TestNGHooks01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSth03">
+                  </a> <!-- testSth03 -->
+                  <span class="method-name">testSth03</span>
+                  <div class="stack-trace">java.lang.AssertionError: ERR expected [b] but found [a]
+                      at tests_learning.testng.TestNGHooks01.testSth03(TestNGHooks01.java:34)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      ... Removed 22 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSth04">
+                  </a> <!-- testSth04 -->
+                  <span class="method-name">testSth04</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+                      ERR 1 expected [b] but found [a],
+                      ERR 2 expected [expect] but found [actual]
+                      at tests_learning.testng.TestNGHooks01.testSth04(TestNGHooks01.java:45)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      ... Removed 19 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests_learning.authen.LoginWithDataProviderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: connect
+                      Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+                      System info: host: &apos;LAPTOP-020HTH5G&apos;, ip: &apos;55.5.55.102&apos;, os.name: &apos;Windows
+                      11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+                      Driver info: driver.version: AndroidDriver
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+                      at java.base/java.util.Optional.orElseGet(Optional.java:369)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                      at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+                      at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                      at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+                      at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+                      at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+                      at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                      at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+                      at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+                      at driver.DriverFactory.getDriver(DriverFactory.java:35)
+                      at tests_learning.authen.LoginWithDataProviderTest.testLogin(LoginWithDataProviderTest.java:14)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      Caused by: java.net.ConnectException: Connection refused: connect
+                      at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+                      at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+                      at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+                      at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+                      at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+                      at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                      at java.base/java.net.Socket.connect(Socket.java:608)
+                      at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+                      at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+                      at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+                      at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+                      at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                      at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                      at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+                      at okhttp3.RealCall.execute(RealCall.java:77)
+                      at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+                      at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+                      ... 35 more
+                      ... Removed 21 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@', password='12345678'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: connect
+                      Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+                      System info: host: &apos;LAPTOP-020HTH5G&apos;, ip: &apos;55.5.55.102&apos;, os.name: &apos;Windows
+                      11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+                      Driver info: driver.version: AndroidDriver
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+                      at java.base/java.util.Optional.orElseGet(Optional.java:369)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                      at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+                      at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                      at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+                      at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+                      at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+                      at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                      at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+                      at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+                      at driver.DriverFactory.getDriver(DriverFactory.java:35)
+                      at tests_learning.authen.LoginWithDataProviderTest.testLogin(LoginWithDataProviderTest.java:14)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      Caused by: java.net.ConnectException: Connection refused: connect
+                      at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+                      at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+                      at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+                      at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+                      at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+                      at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                      at java.base/java.net.Socket.connect(Socket.java:608)
+                      at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+                      at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+                      at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+                      at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+                      at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                      at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                      at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+                      at okhttp3.RealCall.execute(RealCall.java:77)
+                      at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+                      at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+                      ... 35 more
+                      ... Removed 21 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='1234567'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: connect
+                      Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+                      System info: host: &apos;LAPTOP-020HTH5G&apos;, ip: &apos;55.5.55.102&apos;, os.name: &apos;Windows
+                      11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16&apos;
+                      Driver info: driver.version: AndroidDriver
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$6(AppiumCommandExecutor.java:262)
+                      at java.base/java.util.Optional.orElseGet(Optional.java:369)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+                      at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+                      at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+                      at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+                      at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+                      at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+                      at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:363)
+                      at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+                      at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+                      at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:99)
+                      at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:97)
+                      at driver.DriverFactory.getDriver(DriverFactory.java:35)
+                      at tests_learning.authen.LoginWithDataProviderTest.testLogin(LoginWithDataProviderTest.java:14)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+                      at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+                      at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+                      at java.base/java.lang.Thread.run(Thread.java:834)
+                      Caused by: java.net.ConnectException: Connection refused: connect
+                      at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+                      at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+                      at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+                      at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+                      at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+                      at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+                      at java.base/java.net.Socket.connect(Socket.java:608)
+                      at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+                      at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+                      at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+                      at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+                      at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                      at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                      at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                      at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                      at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+                      at okhttp3.RealCall.execute(RealCall.java:77)
+                      at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.lambda$1(AppiumCommandExecutor.java:162)
+                      at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:193)
+                      at
+                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:225)
+                      at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+                      ... 35 more
+                      ... Removed 21 stack frames
+                  </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.parallel.LoginDevice02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Please provide env variable [env]!
+	at driver.DriverFactory.getDriver(DriverFactory.java:54)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.parallel.LoginDevice02.testLogin(LoginDevice02.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.parallel.LoginDevice01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='1234567'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Name is null
+	at java.base/java.lang.Enum.valueOf(Enum.java:238)
+	at platform.Platform.valueOf(Platform.java:3)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.BaseTest.captureScreenshot(BaseTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Name is null
+	at java.base/java.lang.Enum.valueOf(Enum.java:238)
+	at platform.Platform.valueOf(Platform.java:3)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.BaseTest.captureScreenshot(BaseTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-skipped -->
+          <div class="suite-Regression-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests_learning.authen.LoginWithBaseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Please provide env variable [env]!
+	at driver.DriverFactory.getDriver(DriverFactory.java:54)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.BaseTest.captureScreenshot(BaseTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='1234567'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Please provide env variable [env]!
+	at driver.DriverFactory.getDriver(DriverFactory.java:54)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.BaseTest.captureScreenshot(BaseTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login Test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-skipped -->
+          <div class="suite-Regression-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.parallel.LoginDevice02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;12345678&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='12345678'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Please provide env variable [env]!
+	at driver.DriverFactory.getDriver(DriverFactory.java:54)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.BaseTest.captureScreenshot(BaseTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(LoginCred{email=&#039;teo@sth.com&#039;, password=&#039;1234567&#039;})">
+                  </a> <!-- testLogin(LoginCred{email='teo@sth.com', password='1234567'}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Please provide env variable [env]!
+	at driver.DriverFactory.getDriver(DriverFactory.java:54)
+	at tests.BaseTest.getDriver(BaseTest.java:34)
+	at tests.BaseTest.captureScreenshot(BaseTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-skipped -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests_learning.testng.TestNGHooks02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSth01">
+                  </a> <!-- testSth01 -->
+                  <span class="method-name">testSth01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSth02">
+                  </a> <!-- testSth02 -->
+                  <span class="method-name">testSth02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests_learning.testng.TestParameter02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParameter(emulator-5556, 9206)">
+                  </a> <!-- testParameter(emulator-5556, 9206) -->
+                  <span class="method-name">testParameter</span>
+                  <span class="parameters">(emulator-5556,9206)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests_learning.testng.TestParameter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParameter(emulator-5556, 9206)">
+                  </a> <!-- testParameter(emulator-5556, 9206) -->
+                  <span class="method-name">testParameter</span>
+                  <span class="parameters">(emulator-5556,9206)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests_learning.testng.TestNGHooks01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSth01">
+                  </a> <!-- testSth01 -->
+                  <span class="method-name">testSth01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSth02">
+                  </a> <!-- testSth02 -->
+                  <span class="method-name">testSth02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+        </div> <!-- panel Regression -->
+        <div panel-name="test-xml-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Regression&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;emulator-5556&quot;&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;15.0&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5556&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;android&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;9206&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.parallel.LoginDevice02&quot;/&gt;
+      &lt;class name=&quot;tests_learning.testng.BaseTestNG&quot;/&gt;
+      &lt;class name=&quot;tests_learning.testng.TestNGHooks01&quot;/&gt;
+      &lt;class name=&quot;tests_learning.testng.TestNGHooks02&quot;/&gt;
+      &lt;class name=&quot;tests_learning.testng.TestParameter&quot;/&gt;
+      &lt;class name=&quot;tests_learning.testng.TestParameter02&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- emulator-5556 --&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;emulator-5554&quot;&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;15.0&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5554&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;android&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8710&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests_learning.authen.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests_learning.authen.LoginWithBaseTest&quot;/&gt;
+      &lt;class name=&quot;tests_learning.authen.LoginWithDataBuilderTest&quot;/&gt;
+      &lt;class name=&quot;tests_learning.authen.LoginWithDataProviderTest&quot;/&gt;
+      &lt;class name=&quot;tests_learning.gson.TestGSON&quot;/&gt;
+      &lt;class name=&quot;tests.parallel.LoginDevice01&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- emulator-5554 --&gt;
+&lt;/suite&gt; &lt;!-- Regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">emulator-5556 (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">emulator-5554 (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+                  suiteTableInitFunctions.push('tableData_Regression');
+                  function tableData_Regression() {
+                  var data = new google.visualization.DataTable();
+                  data.addColumn('number', 'Number');
+                  data.addColumn('string', 'Method');
+                  data.addColumn('string', 'Class');
+                  data.addColumn('number', 'Time (ms)');
+                  data.addRows(24);
+                  data.setCell(0, 0, 0)
+                  data.setCell(0, 1, 'testLogin')
+                  data.setCell(0, 2, 'tests_learning.authen.LoginTest')
+                  data.setCell(0, 3, 444);
+                  data.setCell(1, 0, 1)
+                  data.setCell(1, 1, 'testLogin')
+                  data.setCell(1, 2, 'tests_learning.authen.LoginWithDataBuilderTest')
+                  data.setCell(1, 3, 29);
+                  data.setCell(2, 0, 2)
+                  data.setCell(2, 1, 'testLogin')
+                  data.setCell(2, 2, 'tests_learning.authen.LoginWithDataBuilderTest')
+                  data.setCell(2, 3, 27);
+                  data.setCell(3, 0, 3)
+                  data.setCell(3, 1, 'testSth03')
+                  data.setCell(3, 2, 'tests_learning.testng.TestNGHooks01')
+                  data.setCell(3, 3, 13);
+                  data.setCell(4, 0, 4)
+                  data.setCell(4, 1, 'testParameter')
+                  data.setCell(4, 2, 'tests_learning.testng.TestParameter')
+                  data.setCell(4, 3, 12);
+                  data.setCell(5, 0, 5)
+                  data.setCell(5, 1, 'testLogin')
+                  data.setCell(5, 2, 'tests_learning.authen.LoginWithDataBuilderTest')
+                  data.setCell(5, 3, 11);
+                  data.setCell(6, 0, 6)
+                  data.setCell(6, 1, 'testLogin')
+                  data.setCell(6, 2, 'tests_learning.authen.LoginWithDataProviderTest')
+                  data.setCell(6, 3, 8);
+                  data.setCell(7, 0, 7)
+                  data.setCell(7, 1, 'testLogin')
+                  data.setCell(7, 2, 'tests_learning.authen.LoginWithDataProviderTest')
+                  data.setCell(7, 3, 7);
+                  data.setCell(8, 0, 8)
+                  data.setCell(8, 1, 'testLogin')
+                  data.setCell(8, 2, 'tests_learning.authen.LoginWithDataProviderTest')
+                  data.setCell(8, 3, 7);
+                  data.setCell(9, 0, 9)
+                  data.setCell(9, 1, 'testLogin')
+                  data.setCell(9, 2, 'tests_learning.authen.LoginWithBaseTest')
+                  data.setCell(9, 3, 5);
+                  data.setCell(10, 0, 10)
+                  data.setCell(10, 1, 'testSth04')
+                  data.setCell(10, 2, 'tests_learning.testng.TestNGHooks01')
+                  data.setCell(10, 3, 4);
+                  data.setCell(11, 0, 11)
+                  data.setCell(11, 1, 'testLogin')
+                  data.setCell(11, 2, 'tests.parallel.LoginDevice02')
+                  data.setCell(11, 3, 3);
+                  data.setCell(12, 0, 12)
+                  data.setCell(12, 1, 'testSth01')
+                  data.setCell(12, 2, 'tests_learning.testng.TestNGHooks01')
+                  data.setCell(12, 3, 2);
+                  data.setCell(13, 0, 13)
+                  data.setCell(13, 1, 'testParameter')
+                  data.setCell(13, 2, 'tests_learning.testng.TestParameter02')
+                  data.setCell(13, 3, 2);
+                  data.setCell(14, 0, 14)
+                  data.setCell(14, 1, 'testSth02')
+                  data.setCell(14, 2, 'tests_learning.testng.TestNGHooks02')
+                  data.setCell(14, 3, 2);
+                  data.setCell(15, 0, 15)
+                  data.setCell(15, 1, 'testSth02')
+                  data.setCell(15, 2, 'tests_learning.testng.TestNGHooks01')
+                  data.setCell(15, 3, 2);
+                  data.setCell(16, 0, 16)
+                  data.setCell(16, 1, 'testSth01')
+                  data.setCell(16, 2, 'tests_learning.testng.TestNGHooks02')
+                  data.setCell(16, 3, 1);
+                  data.setCell(17, 0, 17)
+                  data.setCell(17, 1, 'testLogin')
+                  data.setCell(17, 2, 'tests.parallel.LoginDevice01')
+                  data.setCell(17, 3, 1);
+                  data.setCell(18, 0, 18)
+                  data.setCell(18, 1, 'testLogin')
+                  data.setCell(18, 2, 'tests.parallel.LoginDevice02')
+                  data.setCell(18, 3, 0);
+                  data.setCell(19, 0, 19)
+                  data.setCell(19, 1, 'testLogin')
+                  data.setCell(19, 2, 'tests.parallel.LoginDevice02')
+                  data.setCell(19, 3, 0);
+                  data.setCell(20, 0, 20)
+                  data.setCell(20, 1, 'testLogin')
+                  data.setCell(20, 2, 'tests_learning.authen.LoginWithBaseTest')
+                  data.setCell(20, 3, 0);
+                  data.setCell(21, 0, 21)
+                  data.setCell(21, 1, 'testLogin')
+                  data.setCell(21, 2, 'tests.parallel.LoginDevice01')
+                  data.setCell(21, 3, 0);
+                  data.setCell(22, 0, 22)
+                  data.setCell(22, 1, 'testLogin')
+                  data.setCell(22, 2, 'tests_learning.authen.LoginWithBaseTest')
+                  data.setCell(22, 3, 0);
+                  data.setCell(23, 0, 23)
+                  data.setCell(23, 1, 'testLogin')
+                  data.setCell(23, 2, 'tests.parallel.LoginDevice01')
+                  data.setCell(23, 3, 0);
+                  window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
+                  return data;
+                  }
+              </script>
+              <span class="suite-total-time">Total running time: 642 ms</span>
+              <div id="times-div-Regression">
+              </div> <!-- times-div-Regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests_learning.testng.TestNGHooks02</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.parallel.LoginDevice01</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">quitAppiumSession</span>
+                <br/>
+                <span class="ignored-method-name">initAppiumSession</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests_learning.testng.TestNGHooks01</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.testng.BaseTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.parallel.LoginDevice02</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initAppiumSession(emulator-5556, 9206, android, 15.0)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.authen.LoginWithBaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initAppiumSession(emulator-5554, 8710, android, 15.0)</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.testng.BaseTestNG</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.testng.TestNGHooks02</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.authen.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.testng.TestNGHooks02</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSth01</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">174 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSth02</span>
+                <span class="method-start">182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">186 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.testng.TestParameter</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testParameter(emulator-5556, 9206)</span>
+                <span class="method-start">189 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.testng.TestParameter02</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testParameter(emulator-5556, 9206)</span>
+                <span class="method-start">205 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.parallel.LoginDevice02</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@', password='12345678'})</span>
+                <span class="method-start">259 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=FAILURE method=LoginDevice02.testLogin(test_data.models.LoginCred)...)</span>
+                <span class="method-start">266 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">290 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.testng.TestNGHooks01</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">294 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSth03</span>
+                <span class="method-start">296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">311 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">314 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSth04</span>
+                <span class="method-start">315 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">323 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSth01</span>
+                <span class="method-start">325 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">330 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSth02</span>
+                <span class="method-start">337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">340 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.parallel.LoginDevice02</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quitAppiumSession</span>
+                <span class="method-start">343 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.authen.LoginWithBaseTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@', password='12345678'})</span>
+                <span class="method-start">535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=FAILURE method=LoginWithBaseTest.testLogin(test_data.models.LoginC...)</span>
+                <span class="method-start">543 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                <span class="method-start">548 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">554 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                <span class="method-start">556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">559 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.authen.LoginWithDataBuilderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@', password='12345678'})</span>
+                <span class="method-start">562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                <span class="method-start">575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                <span class="method-start">604 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.authen.LoginWithDataProviderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@', password='12345678'})</span>
+                <span class="method-start">635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                <span class="method-start">643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                <span class="method-start">652 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.parallel.LoginDevice01</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(LoginCred{email='teo@', password='12345678'})</span>
+                <span class="method-start">664 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureScreenshot([TestResult name=testLogin status=FAILURE method=LoginDevice01.testLogin(test_data.models.LoginCred)...)</span>
+                <span class="method-start">666 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='1234567'})</span>
+                <span class="method-start">670 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogin(LoginCred{email='teo@sth.com', password='12345678'})</span>
+                <span class="method-start">673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">675 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests_learning.authen.LoginWithBaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quitAppiumSession</span>
+                <span class="method-start">676 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
