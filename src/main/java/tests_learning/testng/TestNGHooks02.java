@@ -1,4 +1,4 @@
-package tests.testng;
+package tests_learning.testng;
 
 import org.testng.annotations.*;
 

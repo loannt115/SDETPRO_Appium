@@ -5,14 +5,14 @@
         <parameter name="udid" value="emulator-5554"/>
         <parameter name="systemPort" value="8300"/>
         <classes>
-            <class name="tests.testng.TestParameter" />
+            <class name="tests_learning.testng.TestParameter" />
         </classes>
     </test>
     <test name="TestParameter 02" >
         <parameter name="udid" value="emulator-5556"/>
         <parameter name="systemPort" value="8400"/>
         <classes>
-            <class name="tests.testng.TestParameter02" />
+            <class name="tests_learning.testng.TestParameter02" />
         </classes>
     </test>
 </suite>

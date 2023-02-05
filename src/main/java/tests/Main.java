@@ -90,12 +90,12 @@ public class Main implements MobileCapabilityTypeEx {
 
         System.out.println(suite.toXml());
 
-//        // Add Testsuite into suite list
-//        List<XmlSuite> suites = new ArrayList<>();
-//        suites.add(suite);
-//
-//        // Invoke run method
-//        testNG.setXmlSuites(suites);
-//        testNG.run();
+        // Add Testsuite into suite list
+        List<XmlSuite> suites = new ArrayList<>();
+        suites.add(suite);
+
+        // Invoke run method
+        testNG.setXmlSuites(suites);
+        testNG.run();
     }
 }

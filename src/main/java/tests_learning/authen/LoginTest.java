@@ -1,4 +1,4 @@
-package tests.authen;
+package tests_learning.authen;
 
 import driver.DriverFactory;
 import io.appium.java_client.AppiumDriver;

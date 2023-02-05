@@ -1,4 +1,4 @@
-package tests.gson;
+package tests_learning.gson;
 
 import com.google.gson.Gson;
 import test_data.models.LoginCred;
