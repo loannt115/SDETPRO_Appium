@@ -10,7 +10,7 @@ import test_data.models.LoginCred;
 import test_flows.authentication.LoginFlow;
 import tests.BaseTest;
 
-public class LoginWithBaseTest extends BaseTest {
+public class LoginTest extends BaseTest {
     @Issue("LOAN-38")
     @TmsLink("LOAN-1")
     @Description("Login Test with data-driven")
