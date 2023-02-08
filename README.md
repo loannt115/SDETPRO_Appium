@@ -23,7 +23,7 @@ mvn clean package -DskipTests=true
 ```
 * Command to run (remove all allure-re* folders before to generate new Allure report)
 ```
-java -Dplatform=android/ios -Dremote=true/fasle -jar target/SDETPRO_Appium-1.0-SNAPSHOT-fat-tests.jar
+java -Dplatform=android/ios -Dremote=true/fasle -jar -Dhub=http://192.168.5.11 .\target\Demo_Project-1.0-SNAPSHOT.jar
 ```
 ## II. Run via Jenkins
 * Set-up Jenkins job to run via .jar file
