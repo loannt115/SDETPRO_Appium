@@ -38,6 +38,11 @@ public class WebViewComponent {
         wait.until(ExpectedConditions.visibilityOfElementLocated(navToggleBtnSel));
     }
 
+    @Step("Switch to Native context")
+    public void switchToNativeContext(){
+        appiumDriver.context(Contexts.NATIVE);
+    }
+
     @Step("Click on navigation menu button")
     public void clickOnMenuBtn(){
         appiumDriver.findElement(navToggleBtnSel).click();
