@@ -12,5 +12,6 @@ public class WebViewTest extends BaseTest {
         webViewFlow.switchToWebViewContext();
         webViewFlow.clickOnMenuBtn();
         webViewFlow.verifyMenu();
+        webViewFlow.switchToNativeContext();
     }
 }

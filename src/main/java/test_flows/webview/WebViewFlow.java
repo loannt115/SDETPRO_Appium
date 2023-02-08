@@ -20,6 +20,13 @@ public class WebViewFlow extends BaseFlow {
         webViewComp.switchToWebViewContext();
     }
 
+    public void switchToNativeContext(){
+        WebViewScreen webViewScreen = new WebViewScreen(appiumDriver);
+        WebViewComponent webViewComp = webViewScreen.loginFormComp();
+
+        webViewComp.switchToNativeContext();
+    }
+
     public void clickOnMenuBtn(){
         WebViewScreen webViewScreen = new WebViewScreen(appiumDriver);
         WebViewComponent webViewComp = webViewScreen.loginFormComp();
