@@ -23,11 +23,11 @@ mvn clean package -DskipTests=true
 ```
 * Command to run (remove all allure-re* folders before to generate new Allure report)
 ```
-java -Dplatform=android/ios -Dremote=true/fasle -jar target/SDETPRO_Appium-1.0-SNAPSHOT-fat-tests.jar
+java -Dplatform=android/ios -Dremote=true/fasle -jar -Dhub=http://192.168.5.11 .\target\Demo_Project-1.0-SNAPSHOT.jar
 ```
 ## II. Run via Jenkins
 * Set-up Jenkins job to run via .jar file
-* Build with Parameters this Jenkins job manually (or Build periodical Schedule)
+* Build with Parameters this Jenkins job manually (or trigger Build periodical Schedule)
   * `platform = android/ios`: build with platform `android` OR `ios`
   * `remote = true/false`
     * `true`: run on hub-node of Selenium Grid, Pre-condition: run hub port 4444 on computer with ip = {`hub`} and run appium node(s)
