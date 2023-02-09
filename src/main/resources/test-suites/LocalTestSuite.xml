@@ -6,7 +6,11 @@
         <parameter name="udid" value="emulator-5554"/>
         <parameter name="systemPort" value="8300"/>
         <classes>
+            <class name="tests.home.HomeTest" />
             <class name="tests.webview.WebViewTest" />
+            <class name="tests.authen.LoginTest" />
+            <class name="tests.forms.FormsTest" />
+            <class name="tests.swipe.SwipeFormTest" />
         </classes>
     </test>
 </suite>

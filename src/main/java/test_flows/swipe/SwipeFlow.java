@@ -9,15 +9,15 @@ import org.testng.Assert;
 import test_flows.BaseFlow;
 
 public class SwipeFlow extends BaseFlow {
+    private SwipeComponent swipeComp;
 
     public SwipeFlow(AppiumDriver<MobileElement> appiumDriver) {
         super(appiumDriver);
+        this.swipeComp = new SwipeScreen(appiumDriver).swipeComp();
     }
 
     @Step("Verify FullOpenSource carousel content")
     public void verifyFullOpenSourceCarousel() {
-        SwipeScreen swipeScreen = new SwipeScreen(appiumDriver);
-        SwipeComponent swipeComp = swipeScreen.swipeComp();
         swipeComp.waitSwipeScreenDisplay();
 
         Boolean isFullOpenSourceCarouselTitleDisplay = swipeComp.fullOpenSourceCarouselTitleElem().isDisplayed();
@@ -29,9 +29,6 @@ public class SwipeFlow extends BaseFlow {
 
     @Step("Verify GreatCommunity carousel content")
     public void verifyGreatCommunityCarousel() {
-        SwipeScreen swipeScreen = new SwipeScreen(appiumDriver);
-        SwipeComponent swipeComp = swipeScreen.swipeComp();
-
         Boolean isGreatCommunityCarouselTitleDisplay = swipeComp.greatCommunityCarouselTitleElem().isDisplayed();
         Assert.assertTrue(isGreatCommunityCarouselTitleDisplay, "[ERR] GreatCommunityCarouselTitle is not displayed");
 
@@ -41,9 +38,6 @@ public class SwipeFlow extends BaseFlow {
 
     @Step("Verify JsFoundation carousel content")
     public void verifyJsFoundationCarousel() {
-        SwipeScreen swipeScreen = new SwipeScreen(appiumDriver);
-        SwipeComponent swipeComp = swipeScreen.swipeComp();
-
         Boolean isJsFoundationCarouselTitleDisplay = swipeComp.jsFoundationCarouselTitleElem().isDisplayed();
         Assert.assertTrue(isJsFoundationCarouselTitleDisplay, "[ERR] JsFoundationCarouselTitle is not displayed");
 
@@ -53,9 +47,6 @@ public class SwipeFlow extends BaseFlow {
 
     @Step("Verify SupportVideo carousel content")
     public void verifySupportVideoCarousel() {
-        SwipeScreen swipeScreen = new SwipeScreen(appiumDriver);
-        SwipeComponent swipeComp = swipeScreen.swipeComp();
-
         Boolean isSupportVideoCarouselTitleDisplay = swipeComp.supportVideoCarouselTitleElem().isDisplayed();
         Assert.assertTrue(isSupportVideoCarouselTitleDisplay, "[ERR] SupportVideoCarouselTitle is not displayed");
 
@@ -65,9 +56,6 @@ public class SwipeFlow extends BaseFlow {
 
     @Step("Verify Extendable carousel content")
     public void verifyExtendableCarousel() {
-        SwipeScreen swipeScreen = new SwipeScreen(appiumDriver);
-        SwipeComponent swipeComp = swipeScreen.swipeComp();
-
         Boolean isExtendableCarouselTitleDisplay = swipeComp.extendableCarouselTitleElem().isDisplayed();
         Assert.assertTrue(isExtendableCarouselTitleDisplay, "[ERR] ExtendableCarouselTitle is not displayed");
 
@@ -77,9 +65,6 @@ public class SwipeFlow extends BaseFlow {
 
     @Step("Verify Compatible carousel content")
     public void verifyCompatibleCarouse() {
-        SwipeScreen swipeScreen = new SwipeScreen(appiumDriver);
-        SwipeComponent swipeComp = swipeScreen.swipeComp();
-
         Boolean isCompatibleCarouselTitleDisplay = swipeComp.compatibleCarouselTitleElem().isDisplayed();
         Assert.assertTrue(isCompatibleCarouselTitleDisplay, "[ERR] iCompatibleCarouselTitle is not displayed");
 
@@ -89,9 +74,6 @@ public class SwipeFlow extends BaseFlow {
 
     @Step("Verify WebdriverIO logo founded at the end")
     public void verifyLogoAtTheEnd() {
-        SwipeScreen swipeScreen = new SwipeScreen(appiumDriver);
-        SwipeComponent swipeComp = swipeScreen.swipeComp();
-
         Boolean isWebDriverIOLogoDisplay = swipeComp.webDriverIOLogoElem().isDisplayed();
         Assert.assertTrue(isWebDriverIOLogoDisplay, "[ERR] WebDriverIOLogo is not displayed");
 

@@ -12,7 +12,7 @@ public class WebViewScreen {
         this.appiumDriver = appiumDriver;
     }
 
-    public WebViewComponent loginFormComp() {
+    public WebViewComponent webViewComp() {
         return new WebViewComponent(appiumDriver);
     }
 

@@ -1,5 +1,7 @@
 package tests.webview;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import test_flows.webview.WebViewFlow;
 import tests.BaseTest;
@@ -12,6 +14,10 @@ public class WebViewTest extends BaseTest {
         webViewFlow.switchToWebViewContext();
         webViewFlow.clickOnMenuBtn();
         webViewFlow.verifyMenu();
+    }
+    @AfterMethod
+    public void switchToNativeContext(){
+        WebViewFlow webViewFlow = new WebViewFlow(getDriver());
         webViewFlow.switchToNativeContext();
     }
 }

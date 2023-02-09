@@ -9,36 +9,26 @@ import org.testng.Assert;
 import test_flows.BaseFlow;
 
 public class WebViewFlow extends BaseFlow {
+    private WebViewComponent webViewComp;
     public WebViewFlow(AppiumDriver<MobileElement> appiumDriver) {
         super(appiumDriver);
+        this.webViewComp = new WebViewScreen(appiumDriver).webViewComp();
     }
 
     public void switchToWebViewContext(){
-        WebViewScreen webViewScreen = new WebViewScreen(appiumDriver);
-        WebViewComponent webViewComp = webViewScreen.loginFormComp();
-
         webViewComp.switchToWebViewContext();
     }
 
     public void switchToNativeContext(){
-        WebViewScreen webViewScreen = new WebViewScreen(appiumDriver);
-        WebViewComponent webViewComp = webViewScreen.loginFormComp();
-
         webViewComp.switchToNativeContext();
     }
 
     public void clickOnMenuBtn(){
-        WebViewScreen webViewScreen = new WebViewScreen(appiumDriver);
-        WebViewComponent webViewComp = webViewScreen.loginFormComp();
-
         webViewComp.clickOnMenuBtn();
     }
 
     @Step("Verify menu text and hyperlink")
     public void verifyMenu(){
-        WebViewScreen webViewScreen = new WebViewScreen(appiumDriver);
-        WebViewComponent webViewComp = webViewScreen.loginFormComp();
-
         String actualDocsMenuLink = webViewComp.getDocsMenuHyperlink();
         String expectedDocsMenuLink = "/docs/gettingstarted";
         Assert.assertEquals(actualDocsMenuLink, expectedDocsMenuLink, "[ERR] Docs menu link is not correct");
