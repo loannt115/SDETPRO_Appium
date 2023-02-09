@@ -9,15 +9,15 @@ import org.testng.Assert;
 import test_flows.BaseFlow;
 
 public class FormsFlow extends BaseFlow {
+    private FormsComponent formsComp;
 
     public FormsFlow(AppiumDriver<MobileElement> appiumDriver) {
         super(appiumDriver);
+        this.formsComp = new FormsScreen(appiumDriver).formsComp();
     }
 
     @Step("Verify what user input can be displayed")
     public void verifyInputField(String inputtedText){
-        FormsScreen formsScreen = new FormsScreen(appiumDriver);
-        FormsComponent formsComp = formsScreen.formsComp();
         formsComp.waitFormScreenDisplay();
         if (inputtedText.isEmpty()){
             Assert.assertEquals(formsComp.getInputFieldResult(), null);
@@ -30,8 +30,6 @@ public class FormsFlow extends BaseFlow {
 
     @Step("Verify user can switch on/off and text displayed")
     public void verifySwitchToggle(){
-        FormsScreen formsScreen = new FormsScreen(appiumDriver);
-        FormsComponent formsComp = formsScreen.formsComp();
         String switchStatusOn = "Click to turn the switch ON";
         String switchStatusOff = "Click to turn the switch OFF";
         String currentSwitchStatus = formsComp.getSwitchStatusText();
@@ -47,9 +45,6 @@ public class FormsFlow extends BaseFlow {
 
     @Step("User can select dropdown webdriverio/appium/this app is awesome")
     public void selectDropdown(){
-        FormsScreen formsScreen = new FormsScreen(appiumDriver);
-        FormsComponent formsComp = formsScreen.formsComp();
-
         formsComp.selectDropdownOption1();
         formsComp.selectDropdownOption2();
         formsComp.selectDropdownOption3();
@@ -57,9 +52,6 @@ public class FormsFlow extends BaseFlow {
 
     @Step("Verify Active button works properly")
     public void verifyActiveBtn(){
-        FormsScreen formsScreen = new FormsScreen(appiumDriver);
-        FormsComponent formsComp = formsScreen.formsComp();
-
         formsComp.clickOnActiveBtn();
         String actualMessageOnActivePopup = formsComp.getMessageOnActivePopup();
         String expectedMessageOnActivePopup = "This button is active";
@@ -73,9 +65,6 @@ public class FormsFlow extends BaseFlow {
 
     @Step("Verify Inactive button works properly")
     public void verifyInactiveBtn(){
-        FormsScreen formsScreen = new FormsScreen(appiumDriver);
-        FormsComponent formsComp = formsScreen.formsComp();
-
         Boolean isInactiveBtn = formsComp.inactiveBtnElem().isEnabled();
         Assert.assertTrue(isInactiveBtn, "[ERR] Inactive button is not disable");
     }

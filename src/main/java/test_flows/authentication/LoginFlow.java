@@ -12,18 +12,17 @@ import test_flows.BaseFlow;
 public class LoginFlow extends BaseFlow {
     private String email;
     private String password;
+    private LoginFormComponent loginFormComp;
 
     public LoginFlow(AppiumDriver<MobileElement> appiumDriver, String email, String password) {
         super(appiumDriver);
         this.email = email;
         this.password = password;
+        this.loginFormComp = new LoginScreen(appiumDriver).loginFormComp();
     }
 
     @Step("Login")
     public void login() {
-        LoginScreen loginScreen = new LoginScreen(appiumDriver);
-        LoginFormComponent loginFormComp = loginScreen.loginFormComp();
-
         if (!email.isEmpty()) {
             loginFormComp.inputEmail(email);
         }
@@ -37,8 +36,6 @@ public class LoginFlow extends BaseFlow {
 
     @Step("Verify login")
     public void verifyLogin() {
-        LoginScreen loginScreen = new LoginScreen(appiumDriver);
-        LoginFormComponent loginFormComp = loginScreen.loginFormComp();
         boolean isEmailValid = EmailValidator.getInstance().isValid(email);
         boolean isPasswordValid = password.length() >= 8;
 

@@ -11,7 +11,7 @@ public class FormsTest extends BaseTest {
         Swipe swipe = new Swipe(getDriver());
         FormsFlow formsFlow = new FormsFlow(getDriver());
         formsFlow.goToFormsScreen();
-        formsFlow.verifyInputField("SDETPRO Appium Cảm ơn thầy ạ! ^^");
+        formsFlow.verifyInputField("SDETPRO Appium thanks you");
         formsFlow.verifySwitchToggle();
         swipe.swipeUp();
         formsFlow.selectDropdown();
